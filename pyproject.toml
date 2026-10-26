@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leap-gnn"
+version = "0.1.0"
+description = "LEAP: Layer-persistent Edge-confidence Auditing and Propagation (reference implementation)"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.0", "numpy>=1.24", "scipy>=1.10"]
+
+[tool.setuptools]
+packages = ["leap"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
